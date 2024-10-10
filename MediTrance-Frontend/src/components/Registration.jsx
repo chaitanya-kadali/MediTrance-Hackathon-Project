@@ -19,22 +19,28 @@ function Registration()
 
     const submitHandler = (e) => {
         e.preventDefault();
-        if(user.password.length<6) 
-        {
-            alert('password must contain 6 letters');
-         }
-        try{
-            axios.post('https://meditrance-api.vercel.app/user_inf',user).then(response=>{
-                    alert("registered Succesfully!");
-                    setUser({name:'',email:'',password:'',age:''});
-                    window.location.href = '/login';
-                    // LOGIN page redirected from here
-                })
+         if(user.name===""){
+             alert('Name should not be empty');
         }
-        catch(error){
-            console.log('Error sending registration request',error);
+        else if(user.email===""){
+             alert('Email sholud not b');
         }
-       
+        else if(user.password.length<6) {
+             alert('password must contain 6 letters');
+        }
+        else {
+            try{
+                axios.post('https://meditrance-api.vercel.app/user_inf',user).then(response=>{
+                        alert("registered Succesfully!");
+                        setUser({name:'',email:'',password:'',age:''});
+                        window.location.href = '/login';
+                        // LOGIN page redirected from here
+                    })
+            }
+            catch(error){
+                console.log('Error sending registration request',error);
+            }
+        }  
     };
     const goabout=()=>{
         window.location.href='/about'
