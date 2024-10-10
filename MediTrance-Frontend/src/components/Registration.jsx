@@ -2,9 +2,11 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import '../styles/Registration.css';
 import {Link} from 'react-router-dom';  
+
 function Registration()
  {
 
+const [ isValid, setIsValid  ] = useState(true); // consider it is true ...till it got crossed a rule {empty username , empty email id}
     const [user, setUser] = useState({
         name: "",
         email: "",
@@ -20,15 +22,20 @@ function Registration()
     const submitHandler = (e) => {
         e.preventDefault();
          if(user.name===""){
+            setIsValid(false);
              alert('Name should not be empty');
         }
         else if(user.email===""){
+            setIsValid(false);
              alert('Email sholud not b');
         }
         else if(user.password.length<6) {
+            setIsValid(false);
              alert('password must contain 6 letters');
         }
-        else {
+
+
+        if(isValid) {
             try{
                 axios.post('https://meditrance-api.vercel.app/user_inf',user).then(response=>{
                         alert("registered Succesfully!");
@@ -104,6 +111,7 @@ function Registration()
                     name="age"
                     className="reg-input"
                 /><br />
+                {!isValid && <p style={{color:"red",fontSize:"1rem"} }> you have entered invalid details </p>}
                 <button type="submit" id="reg-sub">Submit</button>
             </form>
             <Link className="reg-link" to='/Login'>Already Registered ? click here to Login</Link>
