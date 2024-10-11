@@ -1,4 +1,4 @@
-*{
+/* *{
     margin:0px;
     padding:0px;
 }
@@ -33,7 +33,7 @@
     width:50vh;
     /* position: fixed; */
     /* right:30px;
-    top:200px; */
+    top:200px; 
     margin: 30px;
     margin-left: 10vh;
 }
@@ -48,7 +48,110 @@
     color:rgb(17, 175, 193);
     position: fixed;
     margin-bottom: 70px;
+} */
+
+.medit-page {
+    background: linear-gradient(135deg, #0d0d0d, #001f3f);
+    padding: 2rem;
+    border-radius: 15px;
+    max-width: 1100px;
+    margin: 2rem auto;
+    color: #f0f8ff;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.9);
 }
+
+.medit-head-class {
+    background: linear-gradient(to right, #0074d9, #001f3f);
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+    animation: headFade 1.2s ease-in-out;
+}
+
+#medit-head {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 0.1rem;
+    text-shadow: 3px 3px 10px #001f3f;
+}
+
+.medit-content {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 2rem;
+    border-radius: 15px;
+    margin-top: 1rem;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.8);
+}
+
+.medit-li {
+    list-style: none;
+    padding: 0;
+}
+
+.medit-point {
+    background: #001f3f;
+    color: #cce7ff;
+    border-left: 4px solid #0074d9;
+    padding: 1.2rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    transition: all 0.3s ease;
+    font-size: 1.1rem;
+    position: relative;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.medit-point:hover {
+    background: #0074d977;
+    color: #ffffff;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+}
+
+.medit-point::before {
+    content: '';
+    background: #0074d968;
+    height: 100%;
+    width: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 0 4px 4px 0;
+    transition: width 0.3s ease;
+}
+
+.medit-point:hover::before {
+    width: 100%;
+}
+
+.medit-image {
+   
+    background-image: url('../assets/meditimg.jpg');
+    border-radius: 10px;
+    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); */
+    margin-bottom: 1.5rem;
+    background-size: cover;
+    height: 40vh;
+    width:50vh;
+    z-index: -1;
+    top:200px; 
+    margin: 30px;
+    margin-left: 10vh;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes headFade {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+
 @media (max-width: 800px) {
 .medit-head-class{
     height: 130px;

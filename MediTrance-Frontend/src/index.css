@@ -1,0 +1,37 @@
+/* font family GLOBAL Declarations */
+@font-face {
+    font-family: 'Poppins-Bold';
+    src: url('../fonts/Poppins-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face { /* Global All titles*/
+    font-family: 'Poppins-Medium'; 
+    src: url('../fonts/Poppins-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {  /* Home 1 Usertype */
+    font-family: 'RobotoMono-Bold';
+    src: url('../fonts/Poppins-ExtraBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {       /* only for ayush logo */
+    font-family: 'Cust-Atmospheric';
+    src: url('../fonts/aAtmospheric.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face { /* only for FAQs */
+    font-family: 'SourceSansPro';
+    src: url('../fonts/SourceSansPro-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+*{
+ font-family: 'SourceSansPro';
+  }

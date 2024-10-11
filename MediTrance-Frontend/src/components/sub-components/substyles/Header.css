@@ -41,6 +41,7 @@
     transition: background-color 0.2s, color 0.3s;
     background-color: rgb(17, 175, 193);
     color:black;
+    text-align: center;
 }
 .nav-div-li:hover{
     background-color:#fff;

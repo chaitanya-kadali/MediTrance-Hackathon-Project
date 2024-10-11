@@ -20,7 +20,7 @@ function HowtoMedit ()
 
                         <li class="medit-point">   3. Relax Your Body<br/>
                         Close your eyes and begin to relax your body, starting from your toes and working your way up to your head.<br/></li>
-                        <li class="medit-point">  <div className="medit-image"></div></li>
+                     <div className="medit-image"></div>
                         <li class="medit-point">  4. Focus on Your Breath<br/>
                         Bring your attention to your breath. Notice the sensation of the air entering and leaving your nostrils or the rise and fall of your abdomen.<br/></li>
 
