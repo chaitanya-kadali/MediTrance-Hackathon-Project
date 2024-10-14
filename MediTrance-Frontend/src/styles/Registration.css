@@ -1,154 +1,215 @@
-*{
-    margin:0px;
-    padding:0px;
+* {
+  margin: 0px;
+  padding: 0px;
 }
-.Registration{
-    background-image: url('../assets/registration.png');
-    background-size: cover;
-    height:100vh;
-}   
-.heade{
-    display:flex;
-    justify-content:space-between;
-    background-color: rgb(0, 0, 0);
-    height:70px;
+.Registration {
+  background-image: url("../assets/registration.png");
+  background-size: cover;
+  height: 100vh;
 }
-#heade-medi,#heade-about,#heade-regis,#heade-log{
-    padding: 0px 35px;
-    font-weight: bold;
-    font-size: 1.5rem;
-    color:rgb(17, 175, 193);
-    margin-top:10px;
-    
+.heade {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(0, 0, 0);
+  height: 70px;
+  align-items: center;
+  flex-wrap: wrap;
 }
-#heade-log:hover,#heade-about:hover,#heade-medi:hover{
-   color:rgb(162, 229, 236);
-   cursor:pointer;
-}
-.heade-right{
-    
-    width:300px;
-    display:flex;
-}
-.Registration-form
-{
-    margin-top:80px;
-    background-color: rgba(0, 0, 0, 0.628);
-    width:40vw;
-    height:55vh;
-    border-radius: 25px;
-    margin-left:auto;
-    margin-right: 30px;
-    text-align: center;
-    padding-top: 15px;
-    overflow: auto;
-}
-.reg-input{
-    margin-top: 20px;
-    width: 80%;
-    max-width: 400px;
-    background-color: #d1d1d1; /* Slightly off-black for form */
-    padding: 13px;
-    border-radius: 10px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Stylish shadow */
-}
-.reg-input::placeholder{
-    font-size: 1rem;
-    color:black;
-}
-#reg-sub{
-    font-size:1.4rem;
-    margin:10px;
-
-   
-
-    display: inline-block;
-    padding: 12px 24px;
-    font-weight: bold;
-    text-transform: uppercase;
-    border: none;
-    border-radius: 80px;
-    cursor: pointer;
-    outline: none;
-    transition: background-color 0.2s, color 0.3s;
-}
-#reg-sub:hover{
-    background-color: rgb(17, 175, 193);
-}
-.reg-link
-{
-    color:rgb(254, 200, 119);
-}
-.reg-link:hover
-{
-    color:rgb(0, 124, 240);
+#heade-medi,
+#heade-regis,
+#heade-log {
+  padding: 0px 10px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: rgb(17, 175, 193);
+  margin: 0;
 }
 
+#heade-about {
+  float: right;
+  margin: auto;
+  color: rgb(17, 175, 193);
+  font-weight: bold;
+  font-size: 1.2rem;
+}
 
+#heade-log:hover,
+#heade-about:hover,
+#heade-medi:hover {
+  color: rgb(162, 229, 236);
+  cursor: pointer;
+}
+.heade-right {
+  width: 300px;
+  display: flex;
+}
+.Registration-form {
+  margin-top: 80px;
+  background-color: rgba(0, 0, 0, 0.628);
+  width: 40vw;
+  height: 55vh;
+  border-radius: 25px;
+  margin-left: auto;
+  margin-right: 30px;
+  text-align: center;
+  padding-top: 15px;
+  overflow: auto;
+}
+.reg-input {
+  margin-top: 20px;
+  width: 80%;
+  max-width: 400px;
+  background-color: #d1d1d1; /* Slightly off-black for form */
+  padding: 13px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Stylish shadow */
+}
+.reg-input::placeholder {
+  font-size: 1rem;
+  color: black;
+}
+#reg-sub {
+  font-size: 1.4rem;
+  margin: 10px;
 
-
+  display: inline-block;
+  padding: 12px 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 80px;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.2s, color 0.3s;
+}
+#reg-sub:hover {
+  background-color: rgb(17, 175, 193);
+}
+.reg-link {
+  color: rgb(254, 200, 119);
+}
+.reg-link:hover {
+  color: rgb(0, 124, 240);
+}
 
 /* Mobile Styles */
-@media (max-width: 800px) {
-    
-    .heade {
-        flex-direction: column;
-        /* height: px; Adjusted height for mobile */
-        padding: 10px;
-        width: 100%;
-    }
-    #heade-medi,#heade-about,#heade-regis,#heade-log {
-        
-       /* Adjusted margin to add horizontal space */
-        font-size: 1.2rem; /* Adjusted font-size for mobile */
-        padding: 5px 5px;
-        width: 40%; /* Adjusted width */
-        text-align:center; /* Center align text */
-    }
-    
+@media (max-width: 500px) {
+  .heade {
+    flex-direction: column;
+    /* height: px; Adjusted height for mobile */
+    padding: 10px;
+    width: 100%;
+  }
+  #heade-medi,
+  #heade-about,
+  #heade-log {
+    /* Adjusted margin to add horizontal space */
+    font-size: 1.2rem; /* Adjusted font-size for mobile */
+    padding: 5px 5px;
+    width: 40%; /* Adjusted width */
+    text-align: center; /* Center align text */
+  }
+  #heade-regis {
+    visibility: hidden;
+  }
+  .home-meditation {
+    width: 80vw; /* Adjusted width for mobile */
+    font-size: 0.8rem; /* Adjusted font-size for mobile */
+    top: 120px; /* Adjusted position for mobile */
+    left: 50%;
+    transform: translateX(-50%); /* Center align */
+  }
 
-    .home-meditation {
-        width: 80vw; /* Adjusted width for mobile */
-        font-size: 0.8rem; /* Adjusted font-size for mobile */
-        top: 120px; /* Adjusted position for mobile */
-        left: 50%;
-        transform: translateX(-50%); /* Center align */
-    }
+  #home-medit-matter {
+    margin-left: 0;
+    margin-top: 20px;
+    padding: 0 10px; /* Adjusted padding for mobile */
+    font-size: 1.5rem;
+    line-height: 1.7;
+  }
 
-    #home-medit-matter {
-        margin-left: 0;
-        margin-top: 20px;
-        padding: 0 10px; /* Adjusted padding for mobile */
-        font-size: 1.5rem;
-        line-height: 1.7;
-    }
-
-    #home-head-medit {
-        padding-left: 0;
-        font-size: 2.5rem; /* Adjusted font-size for mobile */
-    }
-    .imgcon{
+  #home-head-medit {
+    padding-left: 0;
+    font-size: 2.5rem; /* Adjusted font-size for mobile */
+  }
+  .imgcon {
     width: 100%;
     height: 100vh; /* Full viewport height */
     background-image: url("../assets/homeback.jpg");
     background-size: cover; /* Cover the entire container */
     background-position: center; /* Center the image */
-    }
-    .Home{
-        background-color: rgba(7, 7, 7, 0.297);
-        height: none;
-        background-image: none;
-        background-size: none;
-       
-    }
-    .Home::before {
-        content: none;
-        position: none;
-        width: none;
-        height: none;
-        background-color: none; /* Adjust the color and opacity as needed */
-        /* z-index: none; Make sure the overlay is behind the content */
-    }
+  }
+  .Home {
+    background-color: rgba(7, 7, 7, 0.297);
+    height: none;
+    background-image: none;
+    background-size: none;
+  }
+  .Home::before {
+    content: none;
+    position: none;
+    width: none;
+    height: none;
+    background-color: none; /* Adjust the color and opacity as needed */
+    /* z-index: none; Make sure the overlay is behind the content */
+  }
+  .Registration-form {
+    align-items: center;
+    width: 300px;
+  }
+}
+@media (max-width: 500px) {
+  .heade {
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap; /* Stack items vertically */
+  }
+
+  .heade-right {
+    flex-direction: row-reverse; /* Stack Login and About vertically */
+
+    justify-content: center; /* Center Login and About */
+
+    gap: 10px; /* Reduce gap between Login and About */
+  }
+  #heade-about,
+  #heade-log {
+    margin-bottom: 10px;
+  }
+  #heade-medi {
+    margin-bottom: 10px;
+    width: 300px;
+    /* margin-bottom: 0px;
+    padding-bottom: 0px; */
+    /* Add spacing between Meditation and the next row */
+  }
+}
+@media (max-width: 350px) {
+  #heade-medi {
+    margin-bottom: 10px;
+    width: 300px;
+    /* Add spacing between Meditation and the next row */
+  }
 }
 
+@media (max-width: 600px) {
+  .heade {
+    flex-direction: row; /* Keep it as row for side by side alignment */
+    justify-content: space-between; /* Ensure space is distributed evenly */
+    align-items: center; /* Center vertically */
+  }
 
+  #heade-regis {
+    display: none; /* Keep this hidden */
+  }
+
+  .heade-right {
+    /* Ensure right buttons are displayed properly */
+    display: flex; /* Ensure they are side by side */
+    gap: 10px; /* Space between the buttons */
+  }
+
+  .Registration-form {
+    width: 90%; /* You can adjust as needed */
+  }
+}
