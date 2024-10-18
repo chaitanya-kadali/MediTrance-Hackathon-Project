@@ -5,25 +5,10 @@
 ## Demo Video
 Youtube video link - https://youtu.be/gh23glrr6h8?si=sohyNcnXX3LBDFdP
 
-## Running Locally
-
-1. Clone the repository:
-
-```bash
-git clone https://github.com/chaitanya-kadali/MediTrance-Hackathon-Project.git
-```
-
-2. Install dependencies
-```bash
-npm install
-``` 
-3. Start the application 
-```bash
-npm run dev
-```
-
 # About
-This is a Team Project built for MERN stack National Level hackathon conducted on 5 april 2024 about meditation session.
+- This is a Team Project built for MERN stack National Level hackathon. Conducted on 5 th april 2024 about meditation session.
+- We have secured 4 th position out of 58 compititive teams.
+
 
 # Contributors
 -  [@chaitanya-kadali](https://github.com/chaitanya-kadali) ( Myself, Team Lead, Full Stack Contributor )
@@ -32,3 +17,20 @@ This is a Team Project built for MERN stack National Level hackathon conducted o
 - [@SaiNagendraThota](https://github.com/sainagendrathota) ( Frontend Contributor )
 - [@Subbu](https://github.com/subbu005) ( Frontend Contributor )
 - [@JayanthVenkat](https://github.com/jayanthvenkat1717) ( Frontend Contributor )
+
+## Running Locally
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/chaitanya-kadali/MediTrance-Hackathon-Project.git
+```
+
+2. Install dependencies (Seperately for backend and frontend)
+```bash
+npm install
+``` 
+3. Start the application 
+```bash
+npm run dev
+```
